@@ -142,7 +142,7 @@
         } while (10000 < 14);
         */
         //FOREACH
-        /*//VC RESOLVERA ESSE PROBLEMA PRA MANHA SEU FODIDO
+        /*
         string[] palavras = { "oi", "tudo bem"," beleza"};
         foreach(string PALAVRA in palavras)//para cada PALAVRA no array de palavras repita o codigo
         {
