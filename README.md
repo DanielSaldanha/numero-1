@@ -1,9 +1,13 @@
     //NUMERO9
+    enum pontocardeal: byte { norte, sul , leste, oeste};
     enum cor { azul , verde , amarelo, vermelho}//um EXpasse o mouse em cima daa palavras e veja seus
     enum opcoes { criar = 1, deletar, editar, listar, atualizar}//valores crescentes e alteraveis
     
     static void Main(string[] args)
     {
+        pontocardeal direcao = pontocardeal.sul;
+        Console.WriteLine((int)direcao);
+        listapontos();
         /*//NUMERO ESPECIAL ENUMS
         Console.WriteLine("selecione uma delas por favor");
         Console.WriteLine("1-criar\n2-deletar\n3-editar\n4-lista\n5-atualizar");///n e quebra de linha
@@ -192,4 +196,15 @@
         return resultadofinal;
     
     }
+     static void listapontos()
+ {
+     pontocardeal ponto = pontocardeal.norte;
+     for(int i = 0; i < 3; i++)
+     {
+         Console.WriteLine(ponto);
+         ponto++;
+     }
+     Console.WriteLine(ponto);
+     Console.ReadLine();
+   }
 }
